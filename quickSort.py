@@ -1,3 +1,9 @@
+"""
+The following implementation of the quikSort algorithm sorts an array in an ascending order. Quicksort runs in O(n log n) time complexity, and is thus one of the
+most efficient sorting algorithms
+
+"""
+
 
 # Define a function run the sorting algorithm
 def quicksort(arr):
