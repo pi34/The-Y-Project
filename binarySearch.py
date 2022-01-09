@@ -22,13 +22,13 @@ def binarySearch (start, end, A, value):
         elif A[mid] > value:
           
             # If so, our value must be between the starting index and the mid index, so perform another round of binary search on that segment
-            return binarySearch(A, start, mid - 1, value)
+            return binarySearch(start, mid - 1, A, value)
 
         # Cehck if the mid value is lesser than what we are looking for
         else:
           
             # If so, our value must be between the mid index and the end index, so perform binary search on that segment
-            return binarySearch(A, mid + 1, end, value)
+            return binarySearch(mid + 1, end, A, value)
 
     # If the base case fails, that means that we have searched through the entire array and the element was not found
     else:
