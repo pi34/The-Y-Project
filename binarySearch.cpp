@@ -13,13 +13,13 @@ int binarySearch (int start, int end, int[] A, int value) {
     if (end >= start) {
 
         // Find the value of the particular segment of the array by taking an average
-        mid = (end+start) / 2
+        mid = (end+start) / 2;
 
         // Check if the mid value is what we are looking for 
         if (A[mid] == value) {
 
             // If so, return the index where the value was found
-            return mid
+            return mid;
 
         }
 
@@ -27,17 +27,17 @@ int binarySearch (int start, int end, int[] A, int value) {
         else if (A[mid] > value) {
 
             // If so, our value must be between the starting index and the mid index, so perform another round of binary search on that segment
-            return binarySearch (start, mid - 1, A, value)
+            return binarySearch (start, mid - 1, A, value);
 
-        }
+        
 
         // Check if the mid value is lesser than what we are looking for
         else {
 
             // If so, our value must be between the mid index and the end index, so perform binary search on that segment
-            return binarySearch(mid + 1, end, A, value)
+            return binarySearch(mid + 1, end, A, value);
 
-        }
+        };
 
     }
 
@@ -45,8 +45,8 @@ int binarySearch (int start, int end, int[] A, int value) {
     else {
 
         // Return an invalid index
-        return -1
+        return -1;
 
-    }
+    };
 
-}
+};
