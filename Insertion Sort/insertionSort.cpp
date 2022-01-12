@@ -1,7 +1,7 @@
-"""
+/* 
 The following implementation of the Insertion Sort Algorithm is used to sort an array in ascending order and has a time compelxity of O(n^2). 
 
-"""
+*/
 
 #include <iostream>
 
