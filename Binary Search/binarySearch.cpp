@@ -1,6 +1,6 @@
-"""
+/*
 The following implementation of the Binary Search Algorithm runs in O(log n) time complexity, and searches a specific element in a sorted array.
-"""
+*/
 
 #include <iostream>
 
